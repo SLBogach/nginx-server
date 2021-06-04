@@ -1,1 +1,19 @@
-# nginx-server
+# Nginx-server
+
+# Description
+
+`Nginx-server` is a project could be used to build adocker image.
+
+Stack of technologies: `debian`, `nginx`, `mariadb`, `phpmyadmin`, `php`, `wordpress`
+
+## 👉🏻 Instructions
+
+### Contents
+
+`Dockerfile` with instructions to build a server image.
+
+`srcs/` contains server configurations and some bash scripts .
+
+### Run a container
+
+`docker run -it -p 80:80 -p 443:443 .` 

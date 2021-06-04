@@ -2,25 +2,24 @@ server {
 	listen 80;
 	listen [::]:80;
 
-	server_name my_domain;
+	server_name localhost;
 
 	return 301 https://$host$request_uri;
 }
 
-server{
+server {
 
 	listen 443 ssl ;
 	listen [::]:443 ssl ;
 
 	root /var/www/my_domain;
-	index index.html index.php index.htm ;
-	
-	server_name my_domain;
-	
-	ssl_certificate /etc/nginx/ssl/my_domain.pem;
+
+	ssl_certificate /etc/nginx/ssl/my_domain.crt;
 	ssl_certificate_key /etc/nginx/ssl/my_domain.key;
 
-	
+	index index.html index.php index.htm ;
+
+	server_name localhost;
 
 	location / {
 		autoindex on;

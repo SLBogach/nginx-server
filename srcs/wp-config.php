@@ -26,7 +26,7 @@ define( 'DB_NAME', 'wordpress' );
 define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'root');
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'qGlBGKhIusm4#F,ryZtrQm`Wq74?vs( UO+?$l0+trb/HErh)]08&;nN~%v},/4*');
-define('SECURE_AUTH_KEY',  '6~Vvf=.Q/3Ej]`B8 ?nhM(R) E-88TrM9~.UOqAM:>KBYL #%6+zapjtDi4Y]64o');
-define('LOGGED_IN_KEY',    '-YtB/R{I5_:BE<@eI {~]{;)[0#-P3!}+lP{d8,lpy+t_*9b;(z$N(>7ZSl{`rpc');
-define('NONCE_KEY',        '@Cd6D.g,}[doeVS{LEb$C<yvq(5cV:aX{Pe{?il{->)n9bCSyP1ccd_@v*ZvnrVI');
-define('AUTH_SALT',        'sq.]QfI<aJpvDkZoucwWboGx0Y^PHmZ^J`c?R_*eN3EGMMBx!^4&B;je|G[<Y&2I');
-define('SECURE_AUTH_SALT', '2Z Ijgv1NK?`q5|VJQBn|wot8<`#iu+L-]oPCF-&?-hu%(.>lE;6?:]ub_td6>bk');
-define('LOGGED_IN_SALT',   'IK$n!_Lm2,&F+M`]#,+q=Oy_o8*_{ 5$;a##Z1.0)Yr@h{y2]j&>sB6rhsdtj^sc');
-define('NONCE_SALT',       'XsaE,GuhVzl/<6NLj~t!vE+]_J;u7ha+TAl3yC^%I1DR%*3yf+!y.W{Apb]v|T&$');
+define('AUTH_KEY',         '=x^;CGvt+`8}%0/r;&+#:6-V-d-`}|OSf0s@BDb3`<ZmZ[9qv+Z!324Fm[Il7,N+');
+define('SECURE_AUTH_KEY',  'e|KB| 2vNQLx+Ga?XR( zqkNSNWWOp`3(gx52z,85Et$*e#P|.mER^JL%|.MP90&');
+define('LOGGED_IN_KEY',    '.HT`i),!+5&Mjh(h59#9^+R>Qw7Jdn}v>g{?8*?=FoGZiO9]Z,Pvz2?yQ1KW0{M&');
+define('NONCE_KEY',        ')Uvte^5=,[z]JKc2m5biBF%Hw|wX+*J d&DxY^gh;Nw|I];[PyIj2/wIhX]i*8&h');
+define('AUTH_SALT',        'RezTTTA7#?#BV 8`m]aOqR9l+b~!MsqSru2f](oRU-Tg4Aqk:uq6--+:>oMzd4EA');
+define('SECURE_AUTH_SALT', '<Fa71lmH/h4ba]Ls $gqgy[{A!zI5k3n+l%Wn,/Mv`Uc*u8%M>SR/hI(QlD?ciy2');
+define('LOGGED_IN_SALT',   '&v]YpA+HrlF/9VEZZ~V@9}~v@tOlAd/KZY=gT~rmbON^0%7G `y?>u|&QkXO&,{E');
+define('NONCE_SALT',       '_J50+0*W?8Aq.Ku4mI<M}_ tfuIFsR|o zyj4R9aOkc=6KM>cX9~<Wl;EY+_DFBj');
 
 /**#@-*/
 
@@ -65,7 +65,21 @@ define('NONCE_SALT',       'XsaE,GuhVzl/<6NLj~t!vE+]_J;u7ha+TAl3yC^%I1DR%*3yf+!y
  */
 $table_prefix = 'wp_';
 
+/**
+ * For developers: WordPress debugging mode.
+ *
+ * Change this to true to enable the display of notices during development.
+ * It is strongly recommended that plugin and theme developers use WP_DEBUG
+ * in their development environments.
+ *
+ * For information on other constants that can be used for debugging,
+ * visit the Codex.
+ *
+ * @link https://codex.wordpress.org/Debugging_in_WordPress
+ */
 define( 'WP_DEBUG', false );
+
+/* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
