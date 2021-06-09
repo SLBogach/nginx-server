@@ -2,7 +2,7 @@
 
 # Description
 
-`Nginx-server` is a project could be used to build adocker image.
+`Nginx-server` is a project could be used to build a docker image.
 
 Stack of technologies: `debian`, `nginx`, `mariadb`, `phpmyadmin`, `php`, `wordpress`
 
